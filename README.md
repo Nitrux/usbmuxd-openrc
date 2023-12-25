@@ -1,2 +1,9 @@
-# usbmuxd-openrc
-Package to add service script for usbmuxd for OpenRC
+# Nitrux usbmuxd for OpenRC
+
+Service files to use usbmuxd with Nitrux.
+
+# Issues
+If you find problems with the contents of this repository please create an issue.
+
+©2023 Nitrux Latinoamericana S.C.
+

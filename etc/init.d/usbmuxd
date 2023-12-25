@@ -1,0 +1,28 @@
+#!/sbin/openrc-run
+
+# Service details
+name="usbmuxd"
+description="Socket daemon for the usbmux protocol used by Apple devices"
+
+# Command to start the service
+command="/usr/sbin/usbmuxd"
+command_args="--user usbmux"
+command_background="yes"
+
+# Load environment variables
+pidfile="/run/${RC_SVCNAME}.pid"
+
+depend() {
+    # Specify any dependencies, if necessary
+    need localmount
+}
+
+start_pre() {
+    # Ensure the 'usbmux' user exists
+    if ! getent passwd usbmux >/dev/null; then
+        eerror "User 'usbmux' does not exist. You may need to create it."
+        return 1
+    fi
+}
+
+# Optionally, implement any custom behavior for stop, restart, etc.

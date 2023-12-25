@@ -1,0 +1,5 @@
+usbmuxd-openrc (0.0.1)  nitrux; urgency=medium
+
+  * Create package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Sun, 24 Dec 2023 20:30:00 -0500
