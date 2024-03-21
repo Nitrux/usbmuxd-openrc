@@ -14,7 +14,7 @@ pidfile="/run/${RC_SVCNAME}.pid"
 
 depend() {
     # Specify any dependencies, if necessary
-    need localmount
+    need mountall
 }
 
 start_pre() {

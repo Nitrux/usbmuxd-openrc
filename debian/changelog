@@ -1,3 +1,9 @@
+usbmuxd-openrc (0.0.2)  nitrux; urgency=medium
+
+  * Update service depndency.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Thu, 21 Mar 2024 12:26:00 -0500
+
 usbmuxd-openrc (0.0.1)  nitrux; urgency=medium
 
   * Create package.
