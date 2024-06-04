@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
-
-# -- Add usbmuxd service files to runlevel/default
+# -- Add usbmuxd service files to runlevel/default.
 
 rc-update add usbmuxd-openrc default
 
-# -- Update services list
+# -- Update services list.
 
 rc-update -u
