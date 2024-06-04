@@ -1,12 +1,8 @@
 #! /bin/bash
 
-#   Add service files to runlevel directory
+#   Add usbmuxd service files to runlevel/default
 
-/bin/cp /etc/init.d/usbmuxd /etc/runlevels/default || true
-
-#   Add service to runlevel
-
-rc-update add usbmuxd default
+rc-update add usbmuxd-openrc default
 
 #   Update services list
 
