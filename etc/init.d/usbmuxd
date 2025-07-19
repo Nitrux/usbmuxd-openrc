@@ -3,16 +3,13 @@
 description="Socket daemon for the usbmux protocol used by Apple devices"
 command="/usr/sbin/usbmuxd"
 command_args="--user usbmux"
-command_background="yes"
-pidfile="/run/${RC_SVCNAME}.pid"
+supervisor=supervise-daemon
 
 depend() {
-	# usbmuxd needs udev to be running to detect USB device events.
 	need udev
 }
 
 start_pre() {
-	# Ensure the 'usbmux' user exists
 	if ! getent passwd usbmux >/dev/null; then
 		eerror "User 'usbmux' does not exist. Please create it first."
 		return 1

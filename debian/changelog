@@ -1,3 +1,9 @@
+usbmuxd-openrc (0.0.5)  nitrux; urgency=medium
+
+  * Use supervise-daemon for daemons.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Sat, 19 Jul 2025 02:51:00 -0500
+
 usbmuxd-openrc (0.0.4)  nitrux; urgency=medium
 
   * Refactor and rename service files.
