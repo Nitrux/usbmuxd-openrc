@@ -2,7 +2,7 @@
 
 description="Socket daemon for the usbmux protocol used by Apple devices"
 command="/usr/sbin/usbmuxd"
-command_args="--user usbmux"
+command_args="-U usbmux -f"
 supervisor=supervise-daemon
 
 depend() {

@@ -1,3 +1,9 @@
+usbmuxd-openrc (0.0.6)  nitrux; urgency=medium
+
+  * Use correct flags.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Sat, 19 Jul 2025 02:54:00 -0500
+
 usbmuxd-openrc (0.0.5)  nitrux; urgency=medium
 
   * Use supervise-daemon for daemons.
