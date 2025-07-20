@@ -1,3 +1,9 @@
+usbmuxd-openrc (0.0.7)  nitrux; urgency=medium
+
+  * Use correct flags, again.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Sun, 20 Jul 2025 05:26:00 -0500
+
 usbmuxd-openrc (0.0.6)  nitrux; urgency=medium
 
   * Use correct flags.
